@@ -274,10 +274,11 @@ $messages['eu'] = array(
 
 /** Persian (فارسی)
  * @author Ebraminio
+ * @author Huji
  * @author Mjbmr
  */
 $messages['fa'] = array(
-	'discussionthreading-desc' => 'افزودن موضوع جدید به صفحات بحث',
+	'discussionthreading-desc' => 'افزودن موضوع جدید به صفحه‌های بحث',
 	'discussionthreading-replysection' => 'پاسخ',
 	'discussionthreading-replysectionhint' => 'به این پیام پاسخ دهید',
 	'discussionthreading-threadnewsection' => 'تازه',
