@@ -481,9 +481,10 @@ $messages['ksh'] = array(
 
 /** Cornish (Kernowek)
  * @author Kw-Moon
+ * @author Nrowe
  */
 $messages['kw'] = array(
-	'discussionthreading-threadnewsection' => 'noweth',
+	'discussionthreading-threadnewsection' => 'nowyth',
 );
 
 /** Luxembourgish (Lëtzebuergesch)
