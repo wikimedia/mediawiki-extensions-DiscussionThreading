@@ -560,6 +560,7 @@ $messages['nl'] = array(
 
 /** Norwegian Nynorsk (‪Norsk (nynorsk)‬)
  * @author Harald Khan
+ * @author Njardarlogar
  */
 $messages['nn'] = array(
 	'discussionthreading-desc' => 'Legg til tråding på diskusjonssider.',
@@ -771,7 +772,7 @@ $messages['uk'] = array(
 	'discussionthreading-threadnewsectionhint' => 'Створити нову тему',
 );
 
-/** Veps (Vepsan kel')
+/** Veps (Vepsän kel’)
  * @author Игорь Бродский
  */
 $messages['vep'] = array(
