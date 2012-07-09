@@ -498,6 +498,14 @@ $messages['lb'] = array(
 	'discussionthreading-threadnewsectionhint' => 'Eng nei Bemierkung derbäisetzen',
 );
 
+/** Lithuanian (lietuvių)
+ * @author Eitvys200
+ */
+$messages['lt'] = array(
+	'discussionthreading-replysection' => 'atsakyti',
+	'discussionthreading-threadnewsection' => 'naujas',
+);
+
 /** Macedonian (македонски)
  * @author Bjankuloski06
  */
