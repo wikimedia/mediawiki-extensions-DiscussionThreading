@@ -535,7 +535,7 @@ $messages['ms'] = array(
 	'discussionthreading-threadnewsection' => 'baru',
 );
 
-/** Erzya (Эрзянь)
+/** Erzya (эрзянь)
  * @author Botuzhaleny-sodamo
  */
 $messages['myv'] = array(
@@ -543,8 +543,7 @@ $messages['myv'] = array(
 	'discussionthreading-threadnewsection' => 'од',
 );
 
-/** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
- * @author Jon Harald Søby
+/** Norwegian Bokmål (‪norsk (bokmål)‬)
  * @author Nghtwlkr
  */
 $messages['nb'] = array(
@@ -780,7 +779,7 @@ $messages['uk'] = array(
 	'discussionthreading-threadnewsectionhint' => 'Створити нову тему',
 );
 
-/** Veps (Vepsän kel’)
+/** Veps (vepsän kel’)
  * @author Игорь Бродский
  */
 $messages['vep'] = array(
