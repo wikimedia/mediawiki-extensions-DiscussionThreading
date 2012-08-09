@@ -685,6 +685,14 @@ $messages['ru'] = array(
 	'discussionthreading-threadnewsectionhint' => 'Начать новую ветвь',
 );
 
+/** Sinhala (සිංහල)
+ * @author පසිඳු කාවින්ද
+ */
+$messages['si'] = array(
+	'discussionthreading-replysection' => 'පිළිතුරු දෙන්න',
+	'discussionthreading-threadnewsection' => 'නව',
+);
+
 /** Slovak (slovenčina)
  * @author Helix84
  */
