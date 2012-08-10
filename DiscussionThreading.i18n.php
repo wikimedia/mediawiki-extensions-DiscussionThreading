@@ -452,6 +452,14 @@ $messages['ja'] = array(
 	'discussionthreading-threadnewsectionhint' => '新しいスレッドを立てる',
 );
 
+/** Georgian (ქართული)
+ * @author David1010
+ */
+$messages['ka'] = array(
+	'discussionthreading-replysection' => 'პასუხი',
+	'discussionthreading-threadnewsection' => 'ახალი',
+);
+
 /** Khmer (ភាសាខ្មែរ)
  * @author Thearith
  */
