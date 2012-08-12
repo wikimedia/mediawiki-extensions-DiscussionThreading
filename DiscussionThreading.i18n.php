@@ -742,6 +742,15 @@ $messages['sv'] = array(
 	'discussionthreading-threadnewsectionhint' => 'Starta en ny tråd',
 );
 
+/** Tamil (தமிழ்)
+ * @author Karthi.dr
+ */
+$messages['ta'] = array(
+	'discussionthreading-replysection' => 'பதில் அளி',
+	'discussionthreading-replysectionhint' => 'இந்த இடுகைக்குப் பதிலளி',
+	'discussionthreading-threadnewsection' => 'புதிய',
+);
+
 /** Telugu (తెలుగు)
  * @author Veeven
  */
