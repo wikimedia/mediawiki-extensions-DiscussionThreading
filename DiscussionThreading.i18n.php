@@ -839,9 +839,11 @@ $messages['vo'] = array(
 
 /** Yiddish (ייִדיש)
  * @author פוילישער
+ * @author පසිඳු කාවින්ද
  */
 $messages['yi'] = array(
 	'discussionthreading-replysection' => 'אָנרופֿן',
+	'discussionthreading-threadnewsection' => 'נײַ',
 );
 
 /** Simplified Chinese (‪中文（简体）‬)
