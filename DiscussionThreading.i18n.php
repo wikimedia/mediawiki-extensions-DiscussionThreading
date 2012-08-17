@@ -804,6 +804,14 @@ $messages['uk'] = array(
 	'discussionthreading-threadnewsectionhint' => 'Створити нову тему',
 );
 
+/** Urdu (اردو)
+ * @author පසිඳු කාවින්ද
+ */
+$messages['ur'] = array(
+	'discussionthreading-replysection' => 'جواب دیں',
+	'discussionthreading-threadnewsection' => 'نئے',
+);
+
 /** Veps (vepsän kel’)
  * @author Игорь Бродский
  */
