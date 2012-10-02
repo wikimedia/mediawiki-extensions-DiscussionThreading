@@ -109,7 +109,7 @@ $messages['az'] = array(
 	'discussionthreading-threadnewsectionhint' => 'Yeni bir başlıq başla',
 );
 
-/** Belarusian (Taraškievica orthography) (‪беларуская (тарашкевіца)‬)
+/** Belarusian (Taraškievica orthography) (беларуская (тарашкевіца)‎)
  * @author EugeneZelenko
  * @author Jim-by
  */
@@ -551,7 +551,7 @@ $messages['myv'] = array(
 	'discussionthreading-threadnewsection' => 'од',
 );
 
-/** Norwegian Bokmål (‪norsk (bokmål)‬)
+/** Norwegian Bokmål (norsk (bokmål)‎)
  * @author Nghtwlkr
  */
 $messages['nb'] = array(
@@ -573,7 +573,7 @@ $messages['nl'] = array(
 	'discussionthreading-threadnewsectionhint' => 'Nieuwe thread starten',
 );
 
-/** Norwegian Nynorsk (‪norsk (nynorsk)‬)
+/** Norwegian Nynorsk (norsk (nynorsk)‎)
  * @author Harald Khan
  * @author Njardarlogar
  */
@@ -712,7 +712,7 @@ $messages['sk'] = array(
 	'discussionthreading-threadnewsectionhint' => 'Začať nové vlákno',
 );
 
-/** Serbian (Cyrillic script) (‪српски (ћирилица)‬)
+/** Serbian (Cyrillic script) (српски (ћирилица)‎)
  * @author Rancher
  * @author Михајло Анђелковић
  */
@@ -723,7 +723,7 @@ $messages['sr-ec'] = array(
 	'discussionthreading-threadnewsectionhint' => 'Започни нову тему',
 );
 
-/** Serbian (Latin script) (‪srpski (latinica)‬) */
+/** Serbian (Latin script) (srpski (latinica)‎) */
 $messages['sr-el'] = array(
 	'discussionthreading-replysection' => 'odgovori',
 	'discussionthreading-replysectionhint' => 'Odgovori na ovu poruku',
@@ -854,7 +854,7 @@ $messages['yi'] = array(
 	'discussionthreading-threadnewsection' => 'נײַ',
 );
 
-/** Simplified Chinese (‪中文（简体）‬)
+/** Simplified Chinese (中文（简体）‎)
  * @author Hydra
  */
 $messages['zh-hans'] = array(
@@ -865,7 +865,7 @@ $messages['zh-hans'] = array(
 	'discussionthreading-threadnewsectionhint' => '启动一个新的线程',
 );
 
-/** Traditional Chinese (‪中文（繁體）‬)
+/** Traditional Chinese (中文（繁體）‎)
  * @author Mark85296341
  */
 $messages['zh-hant'] = array(
