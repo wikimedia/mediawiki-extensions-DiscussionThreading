@@ -723,7 +723,8 @@ $messages['sr-ec'] = array(
 	'discussionthreading-threadnewsectionhint' => 'Започни нову тему',
 );
 
-/** Serbian (Latin script) (srpski (latinica)‎) */
+/** Serbian (Latin script) (srpski (latinica)‎)
+ */
 $messages['sr-el'] = array(
 	'discussionthreading-replysection' => 'odgovori',
 	'discussionthreading-replysectionhint' => 'Odgovori na ovu poruku',
@@ -875,4 +876,3 @@ $messages['zh-hant'] = array(
 	'discussionthreading-threadnewsection' => '新',
 	'discussionthreading-threadnewsectionhint' => '啟動一個新的線程',
 );
-
