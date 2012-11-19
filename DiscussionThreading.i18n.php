@@ -207,6 +207,14 @@ $messages['de'] = array(
 	'discussionthreading-threadnewsectionhint' => 'Neuen Eintrag erstellen',
 );
 
+/** Zazaki (Zazaki)
+ * @author Erdemaslancan
+ */
+$messages['diq'] = array(
+	'discussionthreading-replysection' => 'cewab bıde',
+	'discussionthreading-threadnewsection' => 'newe',
+);
+
 /** Lower Sorbian (dolnoserbski)
  * @author Michawiki
  */
