@@ -466,6 +466,7 @@ $messages['ja'] = array(
 $messages['ka'] = array(
 	'discussionthreading-replysection' => 'პასუხი',
 	'discussionthreading-threadnewsection' => 'ახალი',
+	'discussionthreading-threadnewsectionhint' => 'ახალი ტოტის დაწყება',
 );
 
 /** Khmer (ភាសាខ្មែរ)
