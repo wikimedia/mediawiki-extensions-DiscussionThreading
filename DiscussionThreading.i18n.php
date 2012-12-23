@@ -123,9 +123,11 @@ $messages['be-tarask'] = array(
 
 /** Bulgarian (български)
  * @author DCLXVI
+ * @author පසිඳු කාවින්ද
  */
 $messages['bg'] = array(
 	'discussionthreading-replysection' => 'отговаряне',
+	'discussionthreading-threadnewsection' => 'ново',
 	'discussionthreading-threadnewsectionhint' => 'Започване на нова нишка',
 );
 
@@ -194,6 +196,14 @@ $messages['cy'] = array(
 	'discussionthreading-replysectionhint' => 'Ateb y cyfraniad hwn',
 	'discussionthreading-threadnewsection' => 'newydd',
 	'discussionthreading-threadnewsectionhint' => 'Dechrau trywydd newydd',
+);
+
+/** Danish (dansk)
+ * @author Tjernobyl
+ */
+$messages['da'] = array(
+	'discussionthreading-replysection' => 'svar',
+	'discussionthreading-threadnewsection' => 'ny',
 );
 
 /** German (Deutsch)
@@ -550,6 +560,16 @@ $messages['ml'] = array(
  */
 $messages['ms'] = array(
 	'discussionthreading-threadnewsection' => 'baru',
+);
+
+/** Maltese (Malti)
+ * @author Chrisportelli
+ */
+$messages['mt'] = array(
+	'discussionthreading-replysection' => 'irrispondi',
+	'discussionthreading-replysectionhint' => 'Irrispondi lil dan il-messaġġ',
+	'discussionthreading-threadnewsection' => 'ġdid',
+	'discussionthreading-threadnewsectionhint' => 'Ibda diskussjoni ġdida',
 );
 
 /** Erzya (эрзянь)
