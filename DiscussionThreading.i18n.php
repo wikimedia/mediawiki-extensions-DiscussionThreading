@@ -728,6 +728,7 @@ $messages['ru'] = array(
 $messages['si'] = array(
 	'discussionthreading-replysection' => 'පිළිතුරු දෙන්න',
 	'discussionthreading-threadnewsection' => 'නව',
+	'discussionthreading-threadnewsectionhint' => 'නව සම්බන්ධයක් අරඹන්න',
 );
 
 /** Slovak (slovenčina)
