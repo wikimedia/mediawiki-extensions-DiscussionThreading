@@ -448,6 +448,13 @@ $messages['id'] = array(
 	'discussionthreading-threadnewsectionhint' => 'Mulai sebuah topik baru',
 );
 
+/** Igbo (Igbo)
+ * @author Ukabia
+ */
+$messages['ig'] = array(
+	'discussionthreading-replysection' => 'zá',
+);
+
 /** Italian (italiano)
  * @author Pietrodn
  */
@@ -727,6 +734,7 @@ $messages['ru'] = array(
  */
 $messages['si'] = array(
 	'discussionthreading-replysection' => 'පිළිතුරු දෙන්න',
+	'discussionthreading-replysectionhint' => 'මෙම හසුනට පිළිතුරු දෙන්න',
 	'discussionthreading-threadnewsection' => 'නව',
 	'discussionthreading-threadnewsectionhint' => 'නව සම්බන්ධයක් අරඹන්න',
 );
