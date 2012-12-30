@@ -109,6 +109,15 @@ $messages['az'] = array(
 	'discussionthreading-threadnewsectionhint' => 'Yeni bir başlıq başla',
 );
 
+/** Bashkir (башҡортса)
+ * @author Ләйсән
+ */
+$messages['ba'] = array(
+	'discussionthreading-replysection' => 'яуап',
+	'discussionthreading-replysectionhint' => 'Был хәбәргә яуап бирергә',
+	'discussionthreading-threadnewsection' => 'яңылар',
+);
+
 /** Belarusian (Taraškievica orthography) (беларуская (тарашкевіца)‎)
  * @author EugeneZelenko
  * @author Jim-by
