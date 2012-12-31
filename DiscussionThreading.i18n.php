@@ -413,6 +413,14 @@ $messages['he'] = array(
 	'discussionthreading-threadnewsectionhint' => 'התחלת שרשור חדש',
 );
 
+/** Hindi (हिन्दी)
+ * @author Ansumang
+ */
+$messages['hi'] = array(
+	'discussionthreading-replysection' => 'जवाब',
+	'discussionthreading-threadnewsection' => 'नया',
+);
+
 /** Upper Sorbian (hornjoserbsce)
  * @author Michawiki
  */
@@ -575,7 +583,11 @@ $messages['ml'] = array(
  * @author Anakmalaysia
  */
 $messages['ms'] = array(
+	'discussionthreading-desc' => 'Menambahkan ciri tred pada halaman perbincangan',
+	'discussionthreading-replysection' => 'balas',
+	'discussionthreading-replysectionhint' => 'Balas pos ini',
 	'discussionthreading-threadnewsection' => 'baru',
+	'discussionthreading-threadnewsectionhint' => 'Buka tred baru',
 );
 
 /** Maltese (Malti)
@@ -639,6 +651,13 @@ $messages['oc'] = array(
 	'discussionthreading-replysectionhint' => 'Respondre al comentari',
 	'discussionthreading-threadnewsection' => 'novèl',
 	'discussionthreading-threadnewsectionhint' => 'Començar una discussion novèla',
+);
+
+/** Oriya (ଓଡ଼ିଆ)
+ * @author Ansumang
+ */
+$messages['or'] = array(
+	'discussionthreading-threadnewsection' => 'ନୂଆ',
 );
 
 /** Deitsch (Deitsch)
