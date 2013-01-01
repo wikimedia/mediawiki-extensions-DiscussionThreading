@@ -761,6 +761,7 @@ $messages['ru'] = array(
  * @author පසිඳු කාවින්ද
  */
 $messages['si'] = array(
+	'discussionthreading-desc' => 'කතාබහ පිටුවලට පොටක් එක් කරන්න',
 	'discussionthreading-replysection' => 'පිළිතුරු දෙන්න',
 	'discussionthreading-replysectionhint' => 'මෙම හසුනට පිළිතුරු දෙන්න',
 	'discussionthreading-threadnewsection' => 'නව',
