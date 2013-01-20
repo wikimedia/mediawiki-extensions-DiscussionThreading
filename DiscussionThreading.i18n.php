@@ -109,6 +109,17 @@ $messages['az'] = array(
 	'discussionthreading-threadnewsectionhint' => 'Yeni bir başlıq başla',
 );
 
+/** South Azerbaijani (تورکجه)
+ * @author Mousa
+ */
+$messages['azb'] = array(
+	'discussionthreading-desc' => 'دانیشیق صحیفه‌لرینه قونو سیستمی آرتیر',
+	'discussionthreading-replysection' => 'جاواب',
+	'discussionthreading-replysectionhint' => 'بو گؤندری‌یه جاواب وئر',
+	'discussionthreading-threadnewsection' => 'یئنی',
+	'discussionthreading-threadnewsectionhint' => 'یئنی بیر باشلیق باشلات',
+);
+
 /** Bashkir (башҡортса)
  * @author Ләйсән
  */
@@ -517,6 +528,17 @@ $messages['km'] = array(
  */
 $messages['kn'] = array(
 	'discussionthreading-threadnewsection' => 'ಹೊಸ',
+);
+
+/** Korean (한국어)
+ * @author 아라
+ */
+$messages['ko'] = array(
+	'discussionthreading-desc' => '토론 문서에 스레드 기능을 추가합니다',
+	'discussionthreading-replysection' => '답변',
+	'discussionthreading-replysectionhint' => '이 게시물에 답변',
+	'discussionthreading-threadnewsection' => '새 스레드',
+	'discussionthreading-threadnewsectionhint' => '새 스레드 시작',
 );
 
 /** Colognian (Ripoarisch)
