@@ -22,10 +22,11 @@ $messages['en'] = array(
 /** Message documentation (Message documentation)
  * @author Fryed-peach
  * @author Purodha
+ * @author Shirayuki
  * @author The Evil IP address
  */
 $messages['qqq'] = array(
-	'discussionthreading-desc' => '{{desc}}',
+	'discussionthreading-desc' => '{{desc|name=Discussion Threading|url=http://www.mediawiki.org/wiki/Extension:DiscussionThreading}}',
 	'discussionthreading-replysection' => '{{Identical|Reply}}',
 	'discussionthreading-threadnewsection' => '{{Identical|New}}',
 );
