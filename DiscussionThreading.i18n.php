@@ -648,7 +648,7 @@ $messages['nb'] = array(
 $messages['nl'] = array(
 	'discussionthreading-desc' => "Voegt threading toe aan overlegpagina's",
 	'discussionthreading-replysection' => 'antwoorden',
-	'discussionthreading-replysectionhint' => 'Deze opmerking beantwoorden',
+	'discussionthreading-replysectionhint' => 'Dit bericht beantwoorden',
 	'discussionthreading-threadnewsection' => 'nieuw',
 	'discussionthreading-threadnewsectionhint' => 'Nieuwe thread starten',
 );
