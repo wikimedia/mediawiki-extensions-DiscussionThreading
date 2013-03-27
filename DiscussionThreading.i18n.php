@@ -642,6 +642,14 @@ $messages['nb'] = array(
 	'discussionthreading-threadnewsectionhint' => 'Start en ny tråd',
 );
 
+/** Low German (Plattdüütsch)
+ * @author Joachim Mos
+ */
+$messages['nds'] = array(
+	'discussionthreading-replysection' => 'antern',
+	'discussionthreading-threadnewsection' => 'nee',
+);
+
 /** Dutch (Nederlands)
  * @author Siebrand
  */
