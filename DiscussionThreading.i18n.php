@@ -27,8 +27,20 @@ $messages['en'] = array(
  */
 $messages['qqq'] = array(
 	'discussionthreading-desc' => '{{desc|name=Discussion Threading|url=http://www.mediawiki.org/wiki/Extension:DiscussionThreading}}',
-	'discussionthreading-replysection' => '{{Identical|Reply}}',
-	'discussionthreading-threadnewsection' => '{{Identical|New}}',
+	'discussionthreading-replysection' => 'Used as link text.
+
+The tooltip for the link is {{msg-mw|Discussionthreading-replysectionhint}}.
+{{Identical|Reply}}',
+	'discussionthreading-replysectionhint' => 'Used as tooltip for the link.
+
+The link text is {{msg-mw|Discussionthreading-replysection}}.',
+	'discussionthreading-threadnewsection' => 'Used as link text.
+
+The tooltip for the link is {{msg-mw|Discussionthreading-threadnewsectionhint}}.
+{{Identical|New}}',
+	'discussionthreading-threadnewsectionhint' => 'Used as tooltip for the link.
+
+The link text is {{msg-mw|Discussionthreading-threadnewsection}}.',
 );
 
 /** Afrikaans (Afrikaans)
