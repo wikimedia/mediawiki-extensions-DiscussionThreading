@@ -643,7 +643,7 @@ $messages['myv'] = array(
 	'discussionthreading-threadnewsection' => 'од',
 );
 
-/** Norwegian Bokmål (norsk (bokmål)‎)
+/** Norwegian Bokmål (norsk bokmål)
  * @author Nghtwlkr
  */
 $messages['nb'] = array(
@@ -673,7 +673,7 @@ $messages['nl'] = array(
 	'discussionthreading-threadnewsectionhint' => 'Nieuwe thread starten',
 );
 
-/** Norwegian Nynorsk (norsk (nynorsk)‎)
+/** Norwegian Nynorsk (norsk nynorsk)
  * @author Harald Khan
  * @author Njardarlogar
  */
@@ -696,7 +696,7 @@ $messages['oc'] = array(
 	'discussionthreading-threadnewsectionhint' => 'Començar una discussion novèla',
 );
 
-/** Oriya (ଓଡ଼ିଆ)
+/** Oriya (ଓଡ଼ିଆ)
  * @author Ansumang
  */
 $messages['or'] = array(
