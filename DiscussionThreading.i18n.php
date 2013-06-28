@@ -66,11 +66,12 @@ $messages['aln'] = array(
 );
 
 /** Old English (Ænglisc)
+ * @author Gott wisst
  * @author Wōdenhelm
  */
 $messages['ang'] = array(
-	'discussionthreading-replysection' => 'andsƿarian',
-	'discussionthreading-threadnewsection' => 'nīƿe',
+	'discussionthreading-replysection' => 'andswarian',
+	'discussionthreading-threadnewsection' => 'nīwe',
 );
 
 /** Arabic (العربية)
