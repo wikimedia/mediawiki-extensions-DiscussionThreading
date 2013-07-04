@@ -66,7 +66,7 @@ function efDoDiscussionLink ( $callobj , $nt , $section , $hint='' , $result , $
 {
 	global $wgSectionThreadingOn;
 	if($wgSectionThreadingOn && $nt->isTalkPage() ) {
-		$spanOpen="<span class=\"editsection\">";
+		$spanOpen="<span class=\"mw-editsection\">";
 		$spanClose="</span>";
 		$strippedResults = substr( substr( $result , strlen( $spanOpen )) , 0 , -strlen( $spanClose ) );
 		$commenturl = '&section='.$section.'&replyto=yes';
@@ -75,8 +75,8 @@ function efDoDiscussionLink ( $callobj , $nt , $section , $hint='' , $result , $
 		$newthreadurl = '&section=new';
 		$hint = ( $hint=='' ) ? '' : ' title="' . wfMsgHtml( 'discussionthreading-threadnewsectionhint' , htmlspecialchars( $hint ) ) . '"';
 		$nurl = $callobj->makeKnownLinkObj( $nt, wfMsg( 'discussionthreading-threadnewsection' ), 'action=edit'.$newthreadurl, '' , '' , '' ,  $hint );
-		$nurl = wfMsgExt( 'editsection-brackets', array( 'escape', 'replaceafter', 'language' => $lang ), $nurl );
-		$curl = wfMsgExt( 'editsection-brackets', array( 'escape', 'replaceafter', 'language' => $lang ), $curl );
+		$nurl = '<span class="mw-editsection-bracket">[</span>' . $nurl . '<span class="mw-editsection-bracket">]</span>';
+		$curl = '<span class="mw-editsection-bracket">[</span>' . $curl . '<span class="mw-editsection-bracket">]</span>';
 		$result = $spanOpen.$nurl.$strippedResults.$curl.$spanClose;
 	}
 	return ( true );
