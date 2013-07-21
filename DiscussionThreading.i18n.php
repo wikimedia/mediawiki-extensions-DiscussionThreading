@@ -481,13 +481,14 @@ $messages['ia'] = array(
 
 /** Indonesian (Bahasa Indonesia)
  * @author Bennylin
+ * @author Iwan Novirion
  */
 $messages['id'] = array(
 	'discussionthreading-desc' => 'Tambahkan kemampuan "thread" di halaman pembicaraan',
 	'discussionthreading-replysection' => 'balas',
 	'discussionthreading-replysectionhint' => 'Balas posting ini',
 	'discussionthreading-threadnewsection' => 'baru',
-	'discussionthreading-threadnewsectionhint' => 'Mulai sebuah topik baru',
+	'discussionthreading-threadnewsectionhint' => 'Mulai thread baru',
 );
 
 /** Igbo (Igbo)
@@ -591,6 +592,17 @@ $messages['lb'] = array(
 $messages['lt'] = array(
 	'discussionthreading-replysection' => 'atsakyti',
 	'discussionthreading-threadnewsection' => 'naujas',
+);
+
+/** Minangkabau (Baso Minangkabau)
+ * @author Iwan Novirion
+ */
+$messages['min'] = array(
+	'discussionthreading-desc' => 'Tambahkan kamampuan "thread" di laman runding',
+	'discussionthreading-replysection' => 'baleh',
+	'discussionthreading-replysectionhint' => 'Baleh ka posting ko',
+	'discussionthreading-threadnewsection' => 'baru',
+	'discussionthreading-threadnewsectionhint' => 'Mulai thread baru',
 );
 
 /** Macedonian (македонски)
