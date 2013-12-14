@@ -577,13 +577,14 @@ $messages['kw'] = array(
 
 /** Luxembourgish (Lëtzebuergesch)
  * @author Robby
+ * @author Soued031
  */
 $messages['lb'] = array(
-	'discussionthreading-desc' => 'Bemierkungen (threads) op Diskussiounssäiten derbäisetzen',
+	'discussionthreading-desc' => 'Bemierkungen (threads) op Diskussiounssäiten dobäisetzen',
 	'discussionthreading-replysection' => 'äntwerten',
 	'discussionthreading-replysectionhint' => 'Op dës Bemierkung äntwerten',
 	'discussionthreading-threadnewsection' => 'nei',
-	'discussionthreading-threadnewsectionhint' => 'Eng nei Bemierkung derbäisetzen',
+	'discussionthreading-threadnewsectionhint' => 'Eng nei Bemierkung dobäisetzen',
 );
 
 /** Lithuanian (lietuvių)
