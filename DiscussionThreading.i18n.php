@@ -580,11 +580,11 @@ $messages['kw'] = array(
  * @author Soued031
  */
 $messages['lb'] = array(
-	'discussionthreading-desc' => 'Bemierkungen (threads) op Diskussiounssäiten dobäisetzen',
+	'discussionthreading-desc' => 'Bemierkungen (threads) op Diskussiounssäiten derbäisetzen',
 	'discussionthreading-replysection' => 'äntwerten',
 	'discussionthreading-replysectionhint' => 'Op dës Bemierkung äntwerten',
 	'discussionthreading-threadnewsection' => 'nei',
-	'discussionthreading-threadnewsectionhint' => 'Eng nei Bemierkung dobäisetzen',
+	'discussionthreading-threadnewsectionhint' => 'Eng nei Bemierkung derbäisetzen',
 );
 
 /** Lithuanian (lietuvių)
