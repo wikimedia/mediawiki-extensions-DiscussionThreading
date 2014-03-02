@@ -877,11 +877,13 @@ $messages['ta'] = array(
 );
 
 /** Telugu (తెలుగు)
+ * @author Chaduvari
  * @author Veeven
  */
 $messages['te'] = array(
 	'discussionthreading-replysection' => 'స్పందించండి',
 	'discussionthreading-threadnewsection' => 'కొత్తది',
+	'discussionthreading-threadnewsectionhint' => 'కొత్త తీగను మొదలుపెట్టండి',
 );
 
 /** Thai (ไทย)
