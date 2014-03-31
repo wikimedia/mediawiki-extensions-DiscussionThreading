@@ -1,0 +1,13 @@
+{
+    "@metadata": {
+        "authors": [
+            "Mach",
+            "Vito Genovese"
+        ]
+    },
+    "discussionthreading-desc": "Tartışma sayfalarına başlık sistemi ekle",
+    "discussionthreading-replysection": "cevap",
+    "discussionthreading-replysectionhint": "Bu gönderiye cevap ver",
+    "discussionthreading-threadnewsection": "yeni",
+    "discussionthreading-threadnewsectionhint": "Yeni bir başlık başlat"
+}

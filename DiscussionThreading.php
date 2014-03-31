@@ -13,12 +13,13 @@
 if (!defined('MEDIAWIKI')) die('Not an entry point.');
 
 # Internationalisation file
+$wgMessagesDirs['DiscussionThreading'] = __DIR__ . '/i18n';
 $wgExtensionMessagesFiles['DiscussionThreading'] =  dirname( __FILE__ ) . '/DiscussionThreading.i18n.php';
 $wgExtensionCredits['other'][] = array(
 	'path' => __FILE__,
 	'name' => 'DiscussionThreading',
 	'author' => array( 'Jack D. Pond' , 'Daniel Brice' ),
-	'version' => '1.4',
+	'version' => '1.5.0',
 	'url' => 'https://www.mediawiki.org/wiki/Extension:DiscussionThreading',
 	'descriptionmsg' => 'discussionthreading-desc',
 );
