@@ -1,11 +1,11 @@
 {
-    "@metadata": {
-        "authors": [
-            "Avjoska",
-            "Pikne"
-        ]
-    },
-    "discussionthreading-replysection": "vasta",
-    "discussionthreading-replysectionhint": "Vasta sellele sõnumile",
-    "discussionthreading-threadnewsection": "uus"
+	"@metadata": {
+		"authors": [
+			"Avjoska",
+			"Pikne"
+		]
+	},
+	"discussionthreading-replysection": "vasta",
+	"discussionthreading-replysectionhint": "Vasta sellele sõnumile",
+	"discussionthreading-threadnewsection": "uus"
 }

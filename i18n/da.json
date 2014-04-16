@@ -1,9 +1,9 @@
 {
-    "@metadata": {
-        "authors": [
-            "Tjernobyl"
-        ]
-    },
-    "discussionthreading-replysection": "svar",
-    "discussionthreading-threadnewsection": "ny"
+	"@metadata": {
+		"authors": [
+			"Tjernobyl"
+		]
+	},
+	"discussionthreading-replysection": "svar",
+	"discussionthreading-threadnewsection": "ny"
 }

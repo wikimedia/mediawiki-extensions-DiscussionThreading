@@ -1,12 +1,12 @@
 {
-    "@metadata": {
-        "authors": [
-            "Sanbec"
-        ]
-    },
-    "discussionthreading-desc": "Añade organización por temas a las páginas de discusión",
-    "discussionthreading-replysection": "respuesta",
-    "discussionthreading-replysectionhint": "Respuesta a este tema",
-    "discussionthreading-threadnewsection": "nuevo",
-    "discussionthreading-threadnewsectionhint": "Empezar un nuevo tema"
+	"@metadata": {
+		"authors": [
+			"Sanbec"
+		]
+	},
+	"discussionthreading-desc": "Añade organización por temas a las páginas de discusión",
+	"discussionthreading-replysection": "respuesta",
+	"discussionthreading-replysectionhint": "Respuesta a este tema",
+	"discussionthreading-threadnewsection": "nuevo",
+	"discussionthreading-threadnewsectionhint": "Empezar un nuevo tema"
 }

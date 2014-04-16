@@ -1,11 +1,11 @@
 {
-    "@metadata": {
-        "authors": [
-            "Chrisportelli"
-        ]
-    },
-    "discussionthreading-replysection": "irrispondi",
-    "discussionthreading-replysectionhint": "Irrispondi lil dan il-messaġġ",
-    "discussionthreading-threadnewsection": "ġdid",
-    "discussionthreading-threadnewsectionhint": "Ibda diskussjoni ġdida"
+	"@metadata": {
+		"authors": [
+			"Chrisportelli"
+		]
+	},
+	"discussionthreading-replysection": "irrispondi",
+	"discussionthreading-replysectionhint": "Irrispondi lil dan il-messaġġ",
+	"discussionthreading-threadnewsection": "ġdid",
+	"discussionthreading-threadnewsectionhint": "Ibda diskussjoni ġdida"
 }

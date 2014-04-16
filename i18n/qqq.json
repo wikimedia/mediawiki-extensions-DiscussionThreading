@@ -1,15 +1,15 @@
 {
-    "@metadata": {
-        "authors": [
-            "Fryed-peach",
-            "Purodha",
-            "Shirayuki",
-            "The Evil IP address"
-        ]
-    },
-    "discussionthreading-desc": "{{desc|name=Discussion Threading|url=http://www.mediawiki.org/wiki/Extension:DiscussionThreading}}",
-    "discussionthreading-replysection": "Used as link text.\n\nThe tooltip for the link is {{msg-mw|Discussionthreading-replysectionhint}}.\n{{Identical|Reply}}",
-    "discussionthreading-replysectionhint": "Used as tooltip for the link.\n\nThe link text is {{msg-mw|Discussionthreading-replysection}}.",
-    "discussionthreading-threadnewsection": "Used as link text.\n\nThe tooltip for the link is {{msg-mw|Discussionthreading-threadnewsectionhint}}.\n{{Identical|New}}",
-    "discussionthreading-threadnewsectionhint": "Used as tooltip for the link.\n\nThe link text is {{msg-mw|Discussionthreading-threadnewsection}}."
+	"@metadata": {
+		"authors": [
+			"Fryed-peach",
+			"Purodha",
+			"Shirayuki",
+			"The Evil IP address"
+		]
+	},
+	"discussionthreading-desc": "{{desc|name=Discussion Threading|url=http://www.mediawiki.org/wiki/Extension:DiscussionThreading}}",
+	"discussionthreading-replysection": "Used as link text.\n\nThe tooltip for the link is {{msg-mw|Discussionthreading-replysectionhint}}.\n{{Identical|Reply}}",
+	"discussionthreading-replysectionhint": "Used as tooltip for the link.\n\nThe link text is {{msg-mw|Discussionthreading-replysection}}.",
+	"discussionthreading-threadnewsection": "Used as link text.\n\nThe tooltip for the link is {{msg-mw|Discussionthreading-threadnewsectionhint}}.\n{{Identical|New}}",
+	"discussionthreading-threadnewsectionhint": "Used as tooltip for the link.\n\nThe link text is {{msg-mw|Discussionthreading-threadnewsection}}."
 }

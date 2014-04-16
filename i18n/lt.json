@@ -1,9 +1,9 @@
 {
-    "@metadata": {
-        "authors": [
-            "Eitvys200"
-        ]
-    },
-    "discussionthreading-replysection": "atsakyti",
-    "discussionthreading-threadnewsection": "naujas"
+	"@metadata": {
+		"authors": [
+			"Eitvys200"
+		]
+	},
+	"discussionthreading-replysection": "atsakyti",
+	"discussionthreading-threadnewsection": "naujas"
 }
