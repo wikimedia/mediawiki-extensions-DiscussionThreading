@@ -63,7 +63,7 @@ function efDiscussionLink4other ( $callobj , $title , $section , $url , &$result
 	return ( true );
 }
 
-function efDoDiscussionLink ( $callobj , $nt , $section , $hint='' , $result , $lang = false )
+function efDoDiscussionLink ( $callobj , $nt , $section , $hint='' , &$result )
 {
 	global $wgSectionThreadingOn;
 	if($wgSectionThreadingOn && $nt->isTalkPage() ) {
@@ -80,7 +80,7 @@ function efDoDiscussionLink ( $callobj , $nt , $section , $hint='' , $result , $
 		$curl = '<span class="mw-editsection-bracket">[</span>' . $curl . '<span class="mw-editsection-bracket">]</span>';
 		$result = $spanOpen.$nurl.$strippedResults.$curl.$spanClose;
 	}
-	return ( true );
+	return true;
 }
 
 
