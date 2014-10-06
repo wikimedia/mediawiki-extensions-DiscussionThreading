@@ -71,11 +71,11 @@ function efDoDiscussionLink ( $callobj , $nt , $section , $hint='' , $result , $
 		$spanClose="</span>";
 		$strippedResults = substr( substr( $result , strlen( $spanOpen )) , 0 , -strlen( $spanClose ) );
 		$commenturl = '&section='.$section.'&replyto=yes';
-		$hint = ( $hint=='' ) ? '' : ' title="' . wfMsgHtml( 'discussionthreading-replysectionhint' , htmlspecialchars( $hint ) ) . '"';
-		$curl = $callobj->makeKnownLinkObj( $nt, wfMsg('discussionthreading-replysection'), 'action=edit'.$commenturl, '', '', '',  $hint );
+		$hint = ( $hint=='' ) ? '' : ' title="' . wfMessage( 'discussionthreading-replysectionhint', $hint )->escaped() . '"';
+		$curl = $callobj->makeKnownLinkObj( $nt, wfMessage( 'discussionthreading-replysection' )->escaped(), 'action=edit'.$commenturl, '', '', '',  $hint );
 		$newthreadurl = '&section=new';
-		$hint = ( $hint=='' ) ? '' : ' title="' . wfMsgHtml( 'discussionthreading-threadnewsectionhint' , htmlspecialchars( $hint ) ) . '"';
-		$nurl = $callobj->makeKnownLinkObj( $nt, wfMsg( 'discussionthreading-threadnewsection' ), 'action=edit'.$newthreadurl, '' , '' , '' ,  $hint );
+		$hint = ( $hint=='' ) ? '' : ' title="' . wfMessage( 'discussionthreading-threadnewsectionhint', $hint )->escaped() . '"';
+		$nurl = $callobj->makeKnownLinkObj( $nt, wfMessage( 'discussionthreading-threadnewsection' )->escaped(), 'action=edit'.$newthreadurl, '' , '' , '' ,  $hint );
 		$nurl = '<span class="mw-editsection-bracket">[</span>' . $nurl . '<span class="mw-editsection-bracket">]</span>';
 		$curl = '<span class="mw-editsection-bracket">[</span>' . $curl . '<span class="mw-editsection-bracket">]</span>';
 		$result = $spanOpen.$nurl.$strippedResults.$curl.$spanClose;
