@@ -55,9 +55,21 @@ function efDiscussionLink4other ( $callobj , $title , $section , $url , &$result
 	global $wgSectionThreadingOn;
 	if( $wgSectionThreadingOn && $title->isTalkPage() ) {
 		$commenturl = '&section='.$section.'&replyto=yes';
-		$curl = $callobj->makeKnownLinkObj( $title, wfMsg('discussionthreading-replysection' ) , 'action=edit'.$commenturl );
+		$curl = Linker::link(
+			$title,
+			wfMessage('discussionthreading-replysection' )->escaped(),
+			array(),
+			array( 'action' => 'edit' . $commenturl ),
+			array( 'known' )
+		);
 		$newthreadurl = '&section=new';
-		$nurl = $callobj->makeKnownLinkObj( $nt, wfMsg('discussionthreading-threadnewsection' ) , 'action=edit'.$newthreadurl );
+		$nurl = Linker::link(
+			$nt,
+			wfMessage('discussionthreading-threadnewsection' )->escaped(),
+			array(),
+			array( 'action' => 'edit' . $newthreadurl ),
+			array( 'known' )
+		);
 		$result =  $nurl."][".$url."][".$curl;
 	}
 	return ( true );
@@ -71,11 +83,23 @@ function efDoDiscussionLink ( $callobj , $nt , $section , $hint='' , &$result )
 		$spanClose="</span>";
 		$strippedResults = substr( substr( $result , strlen( $spanOpen )) , 0 , -strlen( $spanClose ) );
 		$commenturl = '&section='.$section.'&replyto=yes';
-		$hint = ( $hint=='' ) ? '' : ' title="' . wfMessage( 'discussionthreading-replysectionhint', $hint )->escaped() . '"';
-		$curl = $callobj->makeKnownLinkObj( $nt, wfMessage( 'discussionthreading-replysection' )->escaped(), 'action=edit'.$commenturl, '', '', '',  $hint );
+		$hint = ( $hint=='' ) ? '' : array( 'title' => wfMessage( 'discussionthreading-replysectionhint', $hint )->escaped() );
+		$curl = Linker::link(
+			$nt,
+			wfMessage( 'discussionthreading-replysection' )->escaped(),
+			$hint,
+			array( 'action' => 'edit' . $commenturl ),
+			array( 'known' )
+		);
 		$newthreadurl = '&section=new';
 		$hint = ( $hint=='' ) ? '' : ' title="' . wfMessage( 'discussionthreading-threadnewsectionhint', $hint )->escaped() . '"';
-		$nurl = $callobj->makeKnownLinkObj( $nt, wfMessage( 'discussionthreading-threadnewsection' )->escaped(), 'action=edit'.$newthreadurl, '' , '' , '' ,  $hint );
+		$nurl = Linker::link(
+			$nt,
+			wfMessage( 'discussionthreading-threadnewsection' )->escaped(),
+			$hint,
+			array( 'action' => 'edit' . $newthreadurl ),
+			array( 'known' )
+		);
 		$nurl = '<span class="mw-editsection-bracket">[</span>' . $nurl . '<span class="mw-editsection-bracket">]</span>';
 		$curl = '<span class="mw-editsection-bracket">[</span>' . $curl . '<span class="mw-editsection-bracket">]</span>';
 		$result = $spanOpen.$nurl.$strippedResults.$curl.$spanClose;
