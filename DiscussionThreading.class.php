@@ -75,7 +75,7 @@ class DiscussionThreading {
 	public static function efDiscussionThread($efform){
 		global $wgSectionThreadingOn;
 		$wgSectionThreadingOn = isset( $wgSectionThreadingOn ) ? $wgSectionThreadingOn : false;
-		if ( $efform->replytosection != '' && $wgSectionThreadingOn  && !$efform->replyadded ) {
+		if ( $efform->replytosection != '' && $wgSectionThreadingOn  && isset( $efform->replyadded ) && !$efform->replyadded ) {
 			if ($efform->replytosection != '' ) {
 				$text = $efform->textbox1;
 				$matches = array();
@@ -131,7 +131,7 @@ class DiscussionThreading {
 	public static function onAttemptSave( $efform ){
 		global $wgSectionThreadingOn;
 		$wgSectionThreadingOn = isset($wgSectionThreadingOn) ? $wgSectionThreadingOn : false;
-		if ( $efform->section == "new" && $wgSectionThreadingOn  && !$efform->replyadded ) {
+		if ( $efform->section == "new" && $wgSectionThreadingOn && isset( $efform->replyadded ) && !$efform->replyadded ) {
 			$efform->summary = $efform->summary." -- ~~~~";
 		}
 		return true;
