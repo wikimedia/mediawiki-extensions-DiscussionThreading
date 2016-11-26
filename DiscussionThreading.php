@@ -35,45 +35,8 @@ $wgSectionThreadingOn = True;
 $wgHooks['EditPage::showEditForm:initial'][] =  'efDiscussionThread';
 $wgHooks['EditPage::attemptSave'][] = 'efStampReply';
 $wgHooks['EditPage::showEditForm:initial'][] =  'efDiscussionThreadEdit';
-$wgHooks['EditSectionLinkForOther'][] =  'efDiscussionLink4other';
 $wgHooks['AlternateEdit'][] =  'efDiscussionThreadEdit';
 $wgHooks['DoEditSectionLink'][] =  'efDoDiscussionLink';
-
-/**
- * This function creates a linkobject for the editSectionLinkForOther function in linker
- *
- * @param $callobj Article object.
- * @param $title Title object.
- * @param $section Integer: section number.
- * @param $hint Link String: title, or default if omitted or empty
- * @param $url Link String: for edit url
- * @param $result String: Returns the section [new][edit][reply] html if in a talk page - otherwise whatever came in with
- * @return  true
- */
-function efDiscussionLink4other ( $callobj , $title , $section , $url , &$result )
-{
-	global $wgSectionThreadingOn;
-	if( $wgSectionThreadingOn && $title->isTalkPage() ) {
-		$commenturl = '&section='.$section.'&replyto=yes';
-		$curl = Linker::link(
-			$title,
-			wfMessage('discussionthreading-replysection' )->escaped(),
-			array(),
-			array( 'action' => 'edit' . $commenturl ),
-			array( 'known' )
-		);
-		$newthreadurl = '&section=new';
-		$nurl = Linker::link(
-			$nt,
-			wfMessage('discussionthreading-threadnewsection' )->escaped(),
-			array(),
-			array( 'action' => 'edit' . $newthreadurl ),
-			array( 'known' )
-		);
-		$result =  $nurl."][".$url."][".$curl;
-	}
-	return ( true );
-}
 
 function efDoDiscussionLink ( $callobj , $nt , $section , $hint='' , &$result )
 {
