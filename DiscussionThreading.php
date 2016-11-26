@@ -27,10 +27,10 @@ $wgExtensionCredits['other'][] = array(
 /**
  * Set up hooks for discussion threading
  *
- * @param $wgSectionThreadingOn global logical variable to activate threading
+ * @param $wgSectionThreadingOn bool global logical variable to activate threading
  */
 global $wgSectionThreadingOn;
-$wgSectionThreadingOn = True;
+$wgSectionThreadingOn = true;
 
 $wgHooks['EditPage::showEditForm:initial'][] =  'efDiscussionThread';
 $wgHooks['EditPage::attemptSave'][] = 'efStampReply';
@@ -38,13 +38,21 @@ $wgHooks['EditPage::showEditForm:initial'][] =  'efDiscussionThreadEdit';
 $wgHooks['AlternateEdit'][] =  'efDiscussionThreadEdit';
 $wgHooks['DoEditSectionLink'][] =  'efDoDiscussionLink';
 
-function efDoDiscussionLink ( $callobj , $nt , $section , $hint='' , &$result )
+/**
+ * @param $callobj
+ * @param $nt Title
+ * @param $section
+ * @param string $hint
+ * @param $result
+ * @return bool
+ */
+function efDoDiscussionLink ( $callobj , $nt , $section , $hint = '' , &$result )
 {
 	global $wgSectionThreadingOn;
 	if($wgSectionThreadingOn && $nt->isTalkPage() ) {
 		$spanOpen="<span class=\"mw-editsection\">";
 		$spanClose="</span>";
-		$strippedResults = substr( substr( $result , strlen( $spanOpen )) , 0 , -strlen( $spanClose ) );
+		$strippedResults = substr( substr( $result, strlen( $spanOpen ) ) , 0 , -strlen( $spanClose ) );
 		$commenturl = '&section='.$section.'&replyto=yes';
 		$hint = ( $hint=='' ) ? '' : array( 'title' => wfMessage( 'discussionthreading-replysectionhint', $hint )->escaped() );
 		$curl = Linker::link(
@@ -65,7 +73,7 @@ function efDoDiscussionLink ( $callobj , $nt , $section , $hint='' , &$result )
 		);
 		$nurl = '<span class="mw-editsection-bracket">[</span>' . $nurl . '<span class="mw-editsection-bracket">]</span>';
 		$curl = '<span class="mw-editsection-bracket">[</span>' . $curl . '<span class="mw-editsection-bracket">]</span>';
-		$result = $spanOpen.$nurl.$strippedResults.$curl.$spanClose;
+		$result = $spanOpen . $nurl . $strippedResults . $curl . $spanClose;
 	}
 	return true;
 }
@@ -74,7 +82,7 @@ function efDoDiscussionLink ( $callobj , $nt , $section , $hint='' , &$result )
 /**
  * This function is a hook used to test to see if empty, if so, start a comment
  *
- * @param $efform form object.
+ * @param $efform EditPage object.
  * @return  true
  */
 function efDiscussionThreadEdit( $efform ) {
@@ -93,7 +101,7 @@ function efDiscussionThreadEdit( $efform ) {
 /**
  * Create a new header, one level below the 'replyto' header, add re: to front and tag it with user information
  *
- * @param $efform Form Object before display
+ * @param $efform EditPage Object before display
  * @return  true
  */
 function efDiscussionThread($efform){
@@ -142,15 +150,14 @@ function efDiscussionThread($efform){
 			$efform->replyadded = true;
 			$efform->textbox1 = $text;
 		}
-		return ( true );
 	}
-	return ( true );
+	return true;
 }
 
 /**
  * When the new header is created from summary in new (+) add comment, just stamp the header as created
  *
- * @param $efform Form Object before display
+ * @param $efform EditPage Object before display
  * @return  true
  */
 function efStampReply($efform){
@@ -159,5 +166,5 @@ function efStampReply($efform){
 	if ( $efform->section == "new" && $wgSectionThreadingOn  && !$efform->replyadded ) {
 		$efform->summary = $efform->summary." -- ~~~~";
 	}
-	return( true );
+	return true;
 }
