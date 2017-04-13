@@ -1,11 +1,5 @@
 <?php
 
-/**
- * Created by PhpStorm.
- * User: reedy
- * Date: 26/11/2016
- * Time: 19:01
- */
 class DiscussionThreading {
 	/**
 	 * @param $callobj
@@ -22,7 +16,9 @@ class DiscussionThreading {
 			$spanClose="</span>";
 			$strippedResults = substr( substr( $result, strlen( $spanOpen ) ) , 0 , -strlen( $spanClose ) );
 			$commenturl = '&section='.$section.'&replyto=yes';
-			$hint = ( $hint=='' ) ? '' : array( 'title' => wfMessage( 'discussionthreading-replysectionhint', $hint )->escaped() );
+			$hint = ( $hint == '' )
+				? ''
+				: array( 'title' => wfMessage( 'discussionthreading-replysectionhint', $hint )->escaped() );
 			$curl = Linker::link(
 				$nt,
 				wfMessage( 'discussionthreading-replysection' )->escaped(),
@@ -31,7 +27,9 @@ class DiscussionThreading {
 				array( 'known' )
 			);
 			$newthreadurl = '&section=new';
-			$hint = ( $hint=='' ) ? '' : ' title="' . wfMessage( 'discussionthreading-threadnewsectionhint', $hint )->escaped() . '"';
+			$hint = ( $hint == '' )
+				? ''
+				: array( 'title' => wfMessage( 'discussionthreading-threadnewsectionhint', $hint )->escaped() );
 			$nurl = Linker::link(
 				$nt,
 				wfMessage( 'discussionthreading-threadnewsection' )->escaped(),
@@ -99,22 +97,23 @@ class DiscussionThreading {
 				// Insert javascript hook that will select the replace me text
 				global $wgOut;
 				$wgOut->addScript("<script type=\"text/javascript\">
-			 function efDiscussionThread(){
-			   var ctrl = document.editform.wpTextbox1;
-			   if (ctrl.setSelectionRange) {
-				 ctrl.focus();
-				 var end = ctrl.value.length;
-				 ctrl.setSelectionRange(end-".strlen($replaceMeText).",end-1);
-				 ctrl.scrollTop = ctrl.scrollHeight;
-			   } elseif (ctrl.createTextRange) {
-				 var range = ctrl.createTextRange();
-				 range.collapse(false);
-				 range.moveStart('character', -".strlen($replaceMeText).");
-				 range.select();
-			   }
-			 }
-			 addOnloadHook(efDiscussionThread);
-			 </script>");
+function efDiscussionThread(){
+	var ctrl = document.editform.wpTextbox1;
+	if (ctrl.setSelectionRange) {
+		ctrl.focus();
+		var end = ctrl.value.length;
+		ctrl.setSelectionRange(end-".strlen($replaceMeText).",end-1);
+		ctrl.scrollTop = ctrl.scrollHeight;
+	} else if (ctrl.createTextRange) {
+		var range = ctrl.createTextRange();
+		range.collapse(false);
+		range.moveStart('character', -".strlen($replaceMeText).");
+		range.select();
+	}
+}
+addOnloadHook(efDiscussionThread);
+			</script>"
+				);
 				$efform->replyadded = true;
 				$efform->textbox1 = $text;
 			}
