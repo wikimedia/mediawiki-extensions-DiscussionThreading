@@ -15,7 +15,8 @@ class DiscussionThreading {
 			$spanOpen="<span class=\"mw-editsection\">";
 			$spanClose="</span>";
 			$strippedResults = substr( substr( $result, strlen( $spanOpen ) ) , 0 , -strlen( $spanClose ) );
-			$commenturl = '&section='.$section.'&replyto=yes';
+
+			$commenturl = array( 'action' => 'edit', 'section' => $section, 'replyto' => 'yes' );
 			$hint = ( $hint == '' )
 				? ''
 				: array( 'title' => wfMessage( 'discussionthreading-replysectionhint', $hint )->escaped() );
@@ -23,27 +24,28 @@ class DiscussionThreading {
 				$nt,
 				wfMessage( 'discussionthreading-replysection' )->escaped(),
 				$hint,
-				array( 'action' => 'edit' . $commenturl ),
+				$commenturl,
 				array( 'known' )
 			);
-			$newthreadurl = '&section=new';
+
+			$newthreadurl = array( 'action' => 'edit', 'section' => 'new' );
 			$hint = ( $hint == '' )
 				? ''
-				: array( 'title' => wfMessage( 'discussionthreading-threadnewsectionhint', $hint )->escaped() );
+				: array('title' => wfMessage( 'discussionthreading-threadnewsectionhint', $hint )->escaped() );
 			$nurl = Linker::link(
 				$nt,
 				wfMessage( 'discussionthreading-threadnewsection' )->escaped(),
 				$hint,
-				array( 'action' => 'edit' . $newthreadurl ),
+				$newthreadurl,
 				array( 'known' )
 			);
+
 			$nurl = '<span class="mw-editsection-bracket">[</span>' . $nurl . '<span class="mw-editsection-bracket">]</span>';
 			$curl = '<span class="mw-editsection-bracket">[</span>' . $curl . '<span class="mw-editsection-bracket">]</span>';
 			$result = $spanOpen . $nurl . $strippedResults . $curl . $spanClose;
 		}
 		return true;
 	}
-
 
 	/**
 	 * This function is a hook used to test to see if empty, if so, start a comment
