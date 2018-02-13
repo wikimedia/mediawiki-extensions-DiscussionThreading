@@ -1,10 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Harley Hartwell"
+			"Harley Hartwell",
+			"Horus"
 		]
 	},
-	"discussionthreading-desc": "เริ่มหัวข้อใหม่ในหน้าพูดคุย",
+	"discussionthreading-desc": "เริ่มหัวข้อใหม่ในหน้าคุย",
 	"discussionthreading-replysection": "ตอบ",
 	"discussionthreading-replysectionhint": "ตอบหัวข้อพูดคุยนี้",
 	"discussionthreading-threadnewsection": "ใหม่",
