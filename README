@@ -25,7 +25,7 @@ MediaWiki supports a discussion model called talk pages. These are regular wiki 
 * '''Transparent response mechanism''' - users can reply to existing comments or create new ones using the [new][edit][reply]  
 * '''Conversation tracking''' - the [reply] allows users to specify existing objects (sections) in the system, and effectively track comments one has left, responses received (regardless of the location), and so on. 
 
-For a more complete analysis, check Erik Möller's [http://www.wikieducator.org/WikiEducator_roadmap/Improve_discussion_functionality article], from which the above was liberally plagiarized.
+For a more complete analysis, check Erik MÃ¶ller's [https://wikieducator.org/WikiEducator_roadmap/Improve_discussion_functionality article], from which the above was liberally plagiarized.
 
 When a new post is created, the extension automatically tags with user information and posting date.  Much like a threaded discussion listserv, it allows response to individual posts and organizes.  Still allows user standard user editing.  Tags do not appear on article or other pages, limited to discussion and 're:' is automatically added to replies.
 
@@ -35,9 +35,9 @@ $wgSectionThreadingOn = True;  /* Enabled */
 </pre>
 
 == Announcements ==
-* Will be incorporating [[User:Danbrice|Danbrice's]] [[Extension_talk:DiscussionThreading#Re:_CSS_tip_to_make_reply_body_match_title.3F_--Danbrice_05:02.2C_29_July_2008_.28UTC.29|automatic indent revisions]] in as soon as I upgrade a server to 1.13 and can test it.
+* Will be incorporating [[User:Danbrice|Danbrice's]] [[Extension_talk:DiscussionThreading#Re:_CSS_tip_to_make_reply_body_match_title?_--Danbrice_05:02,_29_July_2008_(UTC)|automatic indent revisions]] in as soon as I upgrade a server to 1.13 and can test it.
 * Finally got around to putting into SVN and updated instructions
-* '''GREAT NEWS!'''  The enhancement request [http://bugzilla.wikimedia.org/show_bug.cgi?id=10139 Allow Developers to add links to edit sections via hooks] has been made.  This means no patches are required to install this extension if you are using REL1_11 or greater.
+* '''GREAT NEWS!'''  The enhancement request [https://phabricator.wikimedia.org/T12139 Allow Developers to add links to edit sections via hooks] has been made.  This means no patches are required to install this extension if you are using REL1_11 or greater.
 
 == Usage ==
 
@@ -47,7 +47,7 @@ Using Wikis for project management and collaboration.  Many of the older users w
 
 Installation is straightforward for REL1_11 and greater because hooks were added in Linker.php that eliminated the need for patching.  However, if you are using a version below REL1_11, you will have to patch as described in the [[Extension:DiscussionThreading/doc#Installation_Instructions|installation instructions]].
 
-See [http://www.mediawiki.org/wiki/Extension:DiscussionThreading/doc#DiscussionThreading_Extension_Download_and_Installation Installation Instructions]
+See [https://www.mediawiki.org/wiki/Extension:DiscussionThreading/doc#DiscussionThreading_Extension_Download_and_Installation Installation Instructions]
 
 == Parameters ==
 
