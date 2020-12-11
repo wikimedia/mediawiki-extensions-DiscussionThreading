@@ -4,5 +4,9 @@
 			"Умар"
 		]
 	},
-	"discussionthreading-replysection": "жоп"
+	"discussionthreading-desc": "Дийцарийн агӀонехь тӀетуху дийцарийн генаш",
+	"discussionthreading-replysection": "жоп",
+	"discussionthreading-replysectionhint": "ХӀокху хаам жоп далар",
+	"discussionthreading-threadnewsection": "керла",
+	"discussionthreading-threadnewsectionhint": "Кхолла керла га"
 }
