@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Eleassar",
 			"Janezdrilc"
 		]
 	},
@@ -8,5 +9,5 @@
 	"discussionthreading-replysection": "odgovori",
 	"discussionthreading-replysectionhint": "odgovori na to sporočilo",
 	"discussionthreading-threadnewsection": "novo",
-	"discussionthreading-threadnewsectionhint": "Začni novo temo"
+	"discussionthreading-threadnewsectionhint": "Začni novo nit"
 }
