@@ -53,7 +53,7 @@ See [https://www.mediawiki.org/wiki/Extension:DiscussionThreading/doc#Discussion
 
 == Changes to LocalSettings.php ==
 
-<source lang="php">require_once("$IP/extensions/DiscussionThreading/DiscussionThreading.php");</source>
+<source lang="php">wfLoadExtension( 'DiscussionThreading' );</source>
 
 === Code ===
 
