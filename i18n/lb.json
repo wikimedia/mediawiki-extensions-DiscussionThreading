@@ -2,10 +2,11 @@
 	"@metadata": {
 		"authors": [
 			"Robby",
-			"Soued031"
+			"Soued031",
+			"Les Meloures"
 		]
 	},
-	"discussionthreading-desc": "Bemierkungen (threads) op Diskussiounssäiten dobäisetzen",
+	"discussionthreading-desc": "Bemierkungen (threads) op Diskussiounssäiten derbäisetzen",
 	"discussionthreading-replysection": "äntweren",
 	"discussionthreading-replysectionhint": "Op dës Bemierkung äntweren",
 	"discussionthreading-threadnewsection": "nei",
