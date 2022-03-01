@@ -7,7 +7,7 @@ class DiscussionThreading {
 	 * @param Title $title
 	 * @param string $section
 	 * @param string $tooltip
-	 * @param array $links
+	 * @param array &$links
 	 * @param string $lang
 	 *
 	 * @return bool
@@ -56,8 +56,8 @@ class DiscussionThreading {
 	/**
 	 * This function is a hook used to test to see if empty, if so, start a comment
 	 *
-	 * @param $efform EditPage object.
-	 * @return  true
+	 * @param EditPage $efform EditPage object before display.
+	 * @return bool
 	 */
 	public static function efDiscussionThreadEdit( $efform ) {
 		global $wgRequest,$wgSectionThreadingOn;
@@ -65,8 +65,8 @@ class DiscussionThreading {
 		$efform->replytosection = '';
 		$efform->replyadded = false;
 		$efform->replytosection = $wgRequest->getVal( 'replyto' );
-		if( !$efform->getTitle()->exists() ) {
-			if( $wgSectionThreadingOn && $efform->getTitle()->isTalkPage() ) {
+		if ( !$efform->getTitle()->exists() ) {
+			if ( $wgSectionThreadingOn && $efform->getTitle()->isTalkPage() ) {
 				$efform->section = 'new';
 			}
 		}
@@ -76,7 +76,7 @@ class DiscussionThreading {
 	/**
 	 * Create a new header, one level below the 'replyto' header, add re: to front and tag it with user information
 	 *
-	 * @param $efform EditPage Object before display
+	 * @param EditPage $efform EditPage object before display.
 	 * @return bool
 	 */
 	public static function efDiscussionThread( $efform ) {
@@ -91,38 +91,38 @@ class DiscussionThreading {
 			&& !$efform->replyadded
 		) {
 			$text = $efform->textbox1;
-			$matches = array();
-			preg_match( "/^(=+)(.+)\\1/mi" ,
-				$efform->textbox1 ,
+			$matches = [];
+			preg_match( "/^(=+)(.+)\\1/mi",
+				$efform->textbox1,
 				$matches );
-			if( !empty( $matches[2] ) ) {
-				preg_match( "/.*(-+)\\1/mi" , $matches[2] , $matchsign );
-				if (!empty($matchsign[0]) ){
-					$text = $text."\n\n".$matches[1]."=Re: ".trim( $matchsign[0] )." ~~~~".$matches[1]."=";
+			if ( !empty( $matches[2] ) ) {
+				preg_match( "/.*(-+)\\1/mi", $matches[2], $matchsign );
+				if ( !empty( $matchsign[0] ) ) {
+					$text = $text . "\n\n" . $matches[1] . "=Re: " . trim( $matchsign[0] ) . " ~~~~" . $matches[1] . "=";
 				} else {
-					$text = $text."\n\n".$matches[1]."=Re: ".trim( $matches[2] )." -- ~~~~".$matches[1]."=";
+					$text = $text . "\n\n" . $matches[1] . "=Re: " . trim( $matches[2] ) . " -- ~~~~" . $matches[1] . "=";
 				}
 			} else {
-				$text = $text." -- ~~~~<br />\n\n";
+				$text = $text . " -- ~~~~<br />\n\n";
 			}
 			// Add an appropriate number of colons (:) to indent the body.
 			// Include replace me text, so the user knows where to reply
 			$replaceMeText = " Replace this text with your reply";
-			$text .= "\n\n".str_repeat( ":" , strlen( $matches[1] )-1 ).$replaceMeText;
+			$text .= "\n\n" . str_repeat( ":", strlen( $matches[1] ) - 1 ) . $replaceMeText;
 			// Insert javascript hook that will select the replace me text
 			global $wgOut;
-			$wgOut->addScript("<script type=\"text/javascript\">
+			$wgOut->addScript( "<script type=\"text/javascript\">
 function efDiscussionThread(){
 var ctrl = document.editform.wpTextbox1;
 if (ctrl.setSelectionRange) {
 	ctrl.focus();
 	var end = ctrl.value.length;
-	ctrl.setSelectionRange(end-".strlen($replaceMeText).",end-1);
+	ctrl.setSelectionRange(end-" . strlen( $replaceMeText ) . ",end-1);
 	ctrl.scrollTop = ctrl.scrollHeight;
 } else if (ctrl.createTextRange) {
 	var range = ctrl.createTextRange();
 	range.collapse(false);
-	range.moveStart('character', -".strlen($replaceMeText).");
+	range.moveStart('character', -" . strlen( $replaceMeText ) . ");
 	range.select();
 }
 }
@@ -138,7 +138,7 @@ addOnloadHook(efDiscussionThread);
 	/**
 	 * When the new header is created from summary in new (+) add comment, just stamp the header as created
 	 *
-	 * @param $efform EditPage Object before display
+	 * @param EditPage $efform EditPage object before display.
 	 * @return bool
 	 */
 	public static function onAttemptSave( $efform ) {
@@ -150,7 +150,7 @@ addOnloadHook(efDiscussionThread);
 			&& isset( $efform->replyadded )
 			&& !$efform->replyadded
 		) {
-			$efform->summary = $efform->summary." -- ~~~~";
+			$efform->summary = $efform->summary . " -- ~~~~";
 		}
 		return true;
 	}

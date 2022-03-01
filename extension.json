@@ -10,7 +10,7 @@
 	"license-name": "GPL-2.0-or-later",
 	"type": "other",
 	"requires": {
-		"MediaWiki": ">= 1.29.0"
+		"MediaWiki": ">= 1.35.0"
 	},
 	"MessagesDirs": {
 		"DiscussionThreading": [
@@ -18,7 +18,7 @@
 		]
 	},
 	"AutoloadClasses": {
-		"DiscussionThreading": "DiscussionThreading.class.php"
+		"DiscussionThreading": "src/DiscussionThreading.php"
 	},
 	"Hooks": {
 		"EditPage::showEditForm:initial": [
