@@ -1,6 +1,6 @@
 {
 	"name": "DiscussionThreading",
-	"version": "1.6.0",
+	"version": "1.6.1",
 	"author": [
 		"Jack D. Pond",
 		"Daniel Brice"
@@ -27,7 +27,7 @@
 		],
 		"EditPage::attemptSave": "DiscussionThreading::onAttemptSave",
 		"AlternateEdit": "DiscussionThreading::efDiscussionThreadEdit",
-		"DoEditSectionLink": "DiscussionThreading::onDoEditSectionLink"
+		"SkinEditSectionLinks": "DiscussionThreading::onSkinEditSectionLinks"
 	},
 	"config": {
 		"SectionThreadingOn": {
