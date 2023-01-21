@@ -10,7 +10,7 @@
 	"license-name": "GPL-2.0-or-later",
 	"type": "other",
 	"requires": {
-		"MediaWiki": ">= 1.35.0"
+		"MediaWiki": ">= 1.39.0"
 	},
 	"MessagesDirs": {
 		"DiscussionThreading": [
@@ -33,6 +33,25 @@
 		"SectionThreadingOn": {
 			"value": true
 		}
+	},
+	"ResourceModules": {
+		"ext.discussionthreading.select": {
+			"scripts": [
+				"ext.discussionthreading.select.js"
+			],
+			"messages": [
+				"discussionthreading-replacetext"
+			]
+		},
+		"ext.discussionthreading.link": {
+			"styles": [
+				"ext.discussionthreading.link.css"
+			]
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "modules",
+		"remoteExtPath": "DiscussionThreading/modules"
 	},
 	"manifest_version": 2
 }
