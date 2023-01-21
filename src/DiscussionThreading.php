@@ -17,6 +17,8 @@ class DiscussionThreading {
 
 		if ( $wgSectionThreadingOn && $title->isTalkPage() ) {
 
+			// Override some visual editor styles that interfere with this.
+			$skin->getContext()->getOutput()->addModules( 'ext.discussionthreading.link' );
 			$tooltip = ( $tooltip == '' ) ? '' :
 				wfMessage( 'discussionthreading-replysectionhint', $tooltip )->escaped();
 
@@ -60,11 +62,11 @@ class DiscussionThreading {
 	 * @return bool
 	 */
 	public static function efDiscussionThreadEdit( $efform ) {
-		global $wgRequest,$wgSectionThreadingOn;
-
+		global $wgSectionThreadingOn;
+		$request = $efform->getContext()->getRequest();
 		$efform->replytosection = '';
 		$efform->replyadded = false;
-		$efform->replytosection = $wgRequest->getVal( 'replyto' );
+		$efform->replytosection = $request->getVal( 'replyto' );
 		if ( !$efform->getTitle()->exists() ) {
 			if ( $wgSectionThreadingOn && $efform->getTitle()->isTalkPage() ) {
 				$efform->section = 'new';
@@ -81,8 +83,6 @@ class DiscussionThreading {
 	 */
 	public static function efDiscussionThread( $efform ) {
 		global $wgSectionThreadingOn;
-
-		$wgSectionThreadingOn = isset( $wgSectionThreadingOn ) && $wgSectionThreadingOn;
 
 		if (
 			$efform->replytosection != ''
@@ -107,28 +107,12 @@ class DiscussionThreading {
 			}
 			// Add an appropriate number of colons (:) to indent the body.
 			// Include replace me text, so the user knows where to reply
-			$replaceMeText = " Replace this text with your reply";
+			// It is important we coordinate the length here with javascript.
+			// Hence we use ->plain() instead of ->text() and use user lang not content.
+			$replaceMeText = " " . wfMessage( 'discussionthreading-replacetext' )->plain();
 			$text .= "\n\n" . str_repeat( ":", strlen( $matches[1] ) - 1 ) . $replaceMeText;
 			// Insert javascript hook that will select the replace me text
-			global $wgOut;
-			$wgOut->addScript( "<script type=\"text/javascript\">
-function efDiscussionThread(){
-var ctrl = document.editform.wpTextbox1;
-if (ctrl.setSelectionRange) {
-	ctrl.focus();
-	var end = ctrl.value.length;
-	ctrl.setSelectionRange(end-" . strlen( $replaceMeText ) . ",end-1);
-	ctrl.scrollTop = ctrl.scrollHeight;
-} else if (ctrl.createTextRange) {
-	var range = ctrl.createTextRange();
-	range.collapse(false);
-	range.moveStart('character', -" . strlen( $replaceMeText ) . ");
-	range.select();
-}
-}
-addOnloadHook(efDiscussionThread);
-		</script>"
-			);
+			$efform->getContext()->getOutput()->addModules( 'ext.discussionthreading.select' );
 			$efform->replyadded = true;
 			$efform->textbox1 = $text;
 		}
@@ -143,14 +127,13 @@ addOnloadHook(efDiscussionThread);
 	 */
 	public static function onAttemptSave( $efform ) {
 		global $wgSectionThreadingOn;
-		$wgSectionThreadingOn = isset( $wgSectionThreadingOn ) && $wgSectionThreadingOn;
 		if (
 			$efform->section == "new"
 			&& $wgSectionThreadingOn
 			&& isset( $efform->replyadded )
 			&& !$efform->replyadded
 		) {
-			$efform->summary = $efform->summary . " -- ~~~~";
+			$efform->sectiontitle = $efform->sectiontitle . " -- ~~~~";
 		}
 		return true;
 	}
