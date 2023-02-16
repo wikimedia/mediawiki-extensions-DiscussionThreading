@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"McDutchie",
 			"Siebrand"
 		]
 	},
@@ -8,5 +9,6 @@
 	"discussionthreading-replysection": "antwoorden",
 	"discussionthreading-replysectionhint": "Dit bericht beantwoorden",
 	"discussionthreading-threadnewsection": "nieuw",
-	"discussionthreading-threadnewsectionhint": "Nieuwe thread starten"
+	"discussionthreading-threadnewsectionhint": "Nieuwe thread starten",
+	"discussionthreading-replacetext": "Vervang deze tekst door uw antwoord"
 }
