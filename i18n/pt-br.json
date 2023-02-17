@@ -1,12 +1,14 @@
 {
 	"@metadata": {
 		"authors": [
-			"Eduardo.mps"
+			"Eduardo.mps",
+			"Trooper57"
 		]
 	},
 	"discussionthreading-desc": "Adiciona a funcionalidade de tópicos às páginas de discussão",
 	"discussionthreading-replysection": "responder",
 	"discussionthreading-replysectionhint": "Responder a este comentário",
 	"discussionthreading-threadnewsection": "novo",
-	"discussionthreading-threadnewsectionhint": "Iniciar um novo tópico"
+	"discussionthreading-threadnewsectionhint": "Iniciar um novo tópico",
+	"discussionthreading-replacetext": "Substitua este texto com a sua resposta"
 }
