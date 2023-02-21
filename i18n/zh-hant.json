@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Kly",
 			"Mark85296341"
 		]
 	},
@@ -8,5 +9,6 @@
 	"discussionthreading-replysection": "回覆",
 	"discussionthreading-replysectionhint": "回覆這個帖子",
 	"discussionthreading-threadnewsection": "新",
-	"discussionthreading-threadnewsectionhint": "啟動一個新的線程"
+	"discussionthreading-threadnewsectionhint": "啟動一個新的線程",
+	"discussionthreading-replacetext": "以您的回覆來替換此文字"
 }
