@@ -2,12 +2,13 @@
 	"@metadata": {
 		"authors": [
 			"Rotemliss",
-			"YaronSh"
+			"YaronSh",
+			"Amire80"
 		]
 	},
 	"discussionthreading-desc": "הוספת אפשרות שרשור לדפי שיחה",
 	"discussionthreading-replysection": "תגובה",
-	"discussionthreading-replysectionhint": "תגובה להודעה זו",
-	"discussionthreading-threadnewsection": "חדשה",
+	"discussionthreading-replysectionhint": "תגובה לפרסום הזה",
+	"discussionthreading-threadnewsection": "חדש",
 	"discussionthreading-threadnewsectionhint": "התחלת שרשור חדש"
 }
