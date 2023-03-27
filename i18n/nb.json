@@ -9,5 +9,6 @@
 	"discussionthreading-replysection": "svar",
 	"discussionthreading-replysectionhint": "Svar på denne posten",
 	"discussionthreading-threadnewsection": "ny",
-	"discussionthreading-threadnewsectionhint": "Start en ny tråd"
+	"discussionthreading-threadnewsectionhint": "Start en ny tråd",
+	"discussionthreading-replacetext": "Erstatt denne teksten med svaret ditt"
 }
