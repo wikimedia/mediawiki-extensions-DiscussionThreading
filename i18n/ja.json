@@ -1,12 +1,14 @@
 {
 	"@metadata": {
 		"authors": [
-			"Fryed-peach"
+			"Fryed-peach",
+			"もなー(偽物)"
 		]
 	},
 	"discussionthreading-desc": "ノートページにスレッド機能を追加する",
 	"discussionthreading-replysection": "返信",
 	"discussionthreading-replysectionhint": "この投稿に返信する",
 	"discussionthreading-threadnewsection": "新規",
-	"discussionthreading-threadnewsectionhint": "新しいスレッドを立てる"
+	"discussionthreading-threadnewsectionhint": "新しいスレッドを立てる",
+	"discussionthreading-replacetext": "このテキストを返信に置き換えます"
 }
