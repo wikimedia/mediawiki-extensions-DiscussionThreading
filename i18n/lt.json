@@ -1,12 +1,14 @@
 {
 	"@metadata": {
 		"authors": [
-			"Eitvys200"
+			"Eitvys200",
+			"Nokeoo"
 		]
 	},
 	"discussionthreading-desc": "Prideda teminį grupavimą į aptarimo puslapius",
 	"discussionthreading-replysection": "atsakyti",
 	"discussionthreading-replysectionhint": "Atsakyti į šį skelbimą",
 	"discussionthreading-threadnewsection": "naujas",
-	"discussionthreading-threadnewsectionhint": "Pradėti naują temą"
+	"discussionthreading-threadnewsectionhint": "Pradėti naują temą",
+	"discussionthreading-replacetext": "Pakeiskite šį tekstą savo atsakymu"
 }
