@@ -1,12 +1,14 @@
 {
 	"@metadata": {
 		"authors": [
-			"Mark85296341"
+			"Mark85296341",
+			"Kly"
 		]
 	},
 	"discussionthreading-desc": "添加線程交談頁",
 	"discussionthreading-replysection": "回覆",
 	"discussionthreading-replysectionhint": "回覆這個帖子",
 	"discussionthreading-threadnewsection": "新",
-	"discussionthreading-threadnewsectionhint": "啟動一個新的線程"
+	"discussionthreading-threadnewsectionhint": "啟動一個新的線程",
+	"discussionthreading-replacetext": "以您的回覆來替換此文字"
 }

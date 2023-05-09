@@ -1,12 +1,14 @@
 {
 	"@metadata": {
 		"authors": [
-			"Siebrand"
+			"Siebrand",
+			"McDutchie"
 		]
 	},
 	"discussionthreading-desc": "Voegt threading toe aan overlegpagina's",
 	"discussionthreading-replysection": "antwoorden",
 	"discussionthreading-replysectionhint": "Dit bericht beantwoorden",
 	"discussionthreading-threadnewsection": "nieuw",
-	"discussionthreading-threadnewsectionhint": "Nieuwe thread starten"
+	"discussionthreading-threadnewsectionhint": "Nieuwe thread starten",
+	"discussionthreading-replacetext": "Vervang deze tekst door uw antwoord"
 }
