@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Alshamiri1",
 			"Meno25"
 		]
 	},
@@ -8,5 +9,6 @@
 	"discussionthreading-replysection": "رد",
 	"discussionthreading-replysectionhint": "رد على هذه الرسالة",
 	"discussionthreading-threadnewsection": "جديد",
-	"discussionthreading-threadnewsectionhint": "بدء مجموعة رسائل جديدة"
+	"discussionthreading-threadnewsectionhint": "بدء مجموعة رسائل جديدة",
+	"discussionthreading-replacetext": "استبدل هذا النص بردك"
 }
