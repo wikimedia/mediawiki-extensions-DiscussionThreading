@@ -1,12 +1,14 @@
 {
 	"@metadata": {
 		"authors": [
-			"Hydra"
+			"Hydra",
+			"U.T."
 		]
 	},
 	"discussionthreading-desc": "添加线程交谈页",
 	"discussionthreading-replysection": "回复",
 	"discussionthreading-replysectionhint": "回复本贴",
 	"discussionthreading-threadnewsection": "新",
-	"discussionthreading-threadnewsectionhint": "启动一个新的线程"
+	"discussionthreading-threadnewsectionhint": "启动一个新的线程",
+	"discussionthreading-replacetext": "将此文本替换为您的回复"
 }
