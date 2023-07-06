@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Hamilton Abreu",
 			"Malafaya",
 			"Waldir",
 			"Waldyrious"
@@ -10,5 +11,6 @@
 	"discussionthreading-replysection": "responder",
 	"discussionthreading-replysectionhint": "Responder a este comentário",
 	"discussionthreading-threadnewsection": "novo",
-	"discussionthreading-threadnewsectionhint": "Iniciar um novo tópico"
+	"discussionthreading-threadnewsectionhint": "Iniciar um novo tópico",
+	"discussionthreading-replacetext": "Substituir este texto pela sua resposta"
 }
