@@ -1,12 +1,14 @@
 {
 	"@metadata": {
 		"authors": [
-			"Najami"
+			"Najami",
+			"Sabelöga"
 		]
 	},
 	"discussionthreading-desc": "Lägg till trådning på diskussionssidor",
 	"discussionthreading-replysection": "svar",
 	"discussionthreading-replysectionhint": "Svar på den här posten",
 	"discussionthreading-threadnewsection": "ny",
-	"discussionthreading-threadnewsectionhint": "Starta en ny tråd"
+	"discussionthreading-threadnewsectionhint": "Starta en ny tråd",
+	"discussionthreading-replacetext": "Ersätt denna text med ditt svar"
 }
