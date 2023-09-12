@@ -6,7 +6,8 @@
 	},
 	"discussionthreading-desc": "Engadir o encadeamento ás páxinas de conversa",
 	"discussionthreading-replysection": "responder",
-	"discussionthreading-replysectionhint": "Respostar esta publicación",
+	"discussionthreading-replysectionhint": "Responder a esta publicación",
 	"discussionthreading-threadnewsection": "novo",
-	"discussionthreading-threadnewsectionhint": "Comezar un novo fío de conversa"
+	"discussionthreading-threadnewsectionhint": "Comezar un novo fío de conversa",
+	"discussionthreading-replacetext": "Substituír este texto coa túa resposta"
 }
