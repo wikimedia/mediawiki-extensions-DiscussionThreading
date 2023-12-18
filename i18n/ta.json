@@ -1,10 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Karthi.dr"
+			"Karthi.dr",
+			"Fahimrazick"
 		]
 	},
-	"discussionthreading-replysection": "பதில் அளி",
+	"discussionthreading-replysection": "பதிலளி",
 	"discussionthreading-replysectionhint": "இந்த இடுகைக்குப் பதிலளி",
 	"discussionthreading-threadnewsection": "புதிய"
 }
