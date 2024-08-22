@@ -1,10 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Anakmalaysia"
+			"Anakmalaysia",
+			"Hakimi97"
 		]
 	},
-	"discussionthreading-desc": "Menambahkan ciri tred pada halaman perbincangan",
+	"discussionthreading-desc": "Menambahkan ciri rajutan pada laman perbincangan",
 	"discussionthreading-replysection": "balas",
 	"discussionthreading-replysectionhint": "Balas pos ini",
 	"discussionthreading-threadnewsection": "baru",
