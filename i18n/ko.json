@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Tensama0415",
 			"아라"
 		]
 	},
@@ -8,5 +9,6 @@
 	"discussionthreading-replysection": "답변",
 	"discussionthreading-replysectionhint": "이 게시물에 답변",
 	"discussionthreading-threadnewsection": "새 스레드",
-	"discussionthreading-threadnewsectionhint": "새 스레드 시작"
+	"discussionthreading-threadnewsectionhint": "새 스레드 시작",
+	"discussionthreading-replacetext": "이 텍스트를 답변으로 교체합니다."
 }
