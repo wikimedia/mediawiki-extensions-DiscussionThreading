@@ -1,12 +1,14 @@
 {
 	"@metadata": {
 		"authors": [
-			"Helix84"
+			"Helix84",
+			"Wizzard"
 		]
 	},
 	"discussionthreading-desc": "Pridať zobrazenie vlákien na diskusné stránky",
 	"discussionthreading-replysection": "odpovedať",
 	"discussionthreading-replysectionhint": "Odpovedať na tento príspevok",
 	"discussionthreading-threadnewsection": "nové",
-	"discussionthreading-threadnewsectionhint": "Začať nové vlákno"
+	"discussionthreading-threadnewsectionhint": "Začať nové vlákno",
+	"discussionthreading-replacetext": "Tento text nahraďte svojou odpoveďou"
 }
