@@ -4,6 +4,7 @@
 			"Holek",
 			"Leinad",
 			"Maikking",
+			"PanWor",
 			"Sp5uhe"
 		]
 	},
@@ -11,5 +12,6 @@
 	"discussionthreading-replysection": "odpowiedz",
 	"discussionthreading-replysectionhint": "Odpowiedz na tę wiadomość",
 	"discussionthreading-threadnewsection": "nowy",
-	"discussionthreading-threadnewsectionhint": "Zacznij nowy wątek"
+	"discussionthreading-threadnewsectionhint": "Zacznij nowy wątek",
+	"discussionthreading-replacetext": "Zastąp ten tekst swoją odpowiedzią"
 }
