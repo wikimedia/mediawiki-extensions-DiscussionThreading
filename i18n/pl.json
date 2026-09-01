@@ -4,12 +4,14 @@
 			"Holek",
 			"Leinad",
 			"Maikking",
-			"Sp5uhe"
+			"Sp5uhe",
+			"PanWor"
 		]
 	},
 	"discussionthreading-desc": "Dodaje obsługę wątków do stron dyskusji",
 	"discussionthreading-replysection": "odpowiedz",
 	"discussionthreading-replysectionhint": "Odpowiedz na tę wiadomość",
 	"discussionthreading-threadnewsection": "nowy",
-	"discussionthreading-threadnewsectionhint": "Zacznij nowy wątek"
+	"discussionthreading-threadnewsectionhint": "Zacznij nowy wątek",
+	"discussionthreading-replacetext": "Zastąp ten tekst swoją odpowiedzią"
 }
