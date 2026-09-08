@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"BaRaN6161 TURK",
+			"Leo",
 			"Mach",
 			"MuratTheTurkish",
 			"Vito Genovese"
@@ -11,5 +12,6 @@
 	"discussionthreading-replysection": "yanıtla",
 	"discussionthreading-replysectionhint": "Bu gönderiye cevap ver",
 	"discussionthreading-threadnewsection": "yeni",
-	"discussionthreading-threadnewsectionhint": "Yeni bir başlık başlat"
+	"discussionthreading-threadnewsectionhint": "Yeni bir başlık başlat",
+	"discussionthreading-replacetext": "Bu metni kendi yanıtınızla değiştirin"
 }
