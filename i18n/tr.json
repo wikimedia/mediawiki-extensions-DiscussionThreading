@@ -4,12 +4,14 @@
 			"BaRaN6161 TURK",
 			"Mach",
 			"MuratTheTurkish",
-			"Vito Genovese"
+			"Vito Genovese",
+			"Leo"
 		]
 	},
 	"discussionthreading-desc": "Tartışma sayfalarına başlık sistemi ekleyin",
 	"discussionthreading-replysection": "yanıtla",
 	"discussionthreading-replysectionhint": "Bu gönderiye cevap ver",
 	"discussionthreading-threadnewsection": "yeni",
-	"discussionthreading-threadnewsectionhint": "Yeni bir başlık başlat"
+	"discussionthreading-threadnewsectionhint": "Yeni bir başlık başlat",
+	"discussionthreading-replacetext": "Bu metni kendi yanıtınızla değiştirin"
 }
