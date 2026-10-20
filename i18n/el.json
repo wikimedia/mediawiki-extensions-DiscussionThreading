@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Jimkats",
 			"Konsnos",
 			"Omnipaedista"
 		]
@@ -9,5 +10,6 @@
 	"discussionthreading-replysection": "απάντηση",
 	"discussionthreading-replysectionhint": "Απάντηση σε αυτό το ποστ",
 	"discussionthreading-threadnewsection": "νέο",
-	"discussionthreading-threadnewsectionhint": "Προσθήκη νέου τμήματος"
+	"discussionthreading-threadnewsectionhint": "Προσθήκη νέου τμήματος",
+	"discussionthreading-replacetext": "Αντικαταστήστε αυτό το κείμενο με την απάντησή σας"
 }
